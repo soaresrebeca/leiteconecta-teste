@@ -123,13 +123,13 @@ header a:hover{
 .hero h1{
     color:#F20574;
     font-family:"Montserrat";
-    font-size:clamp(2rem, 4vw, 3.5rem);
+    font-size:clamp(3rem, 3vw, 3.5rem);
     font-weight:800;
     line-height:1.05;
 }
 
 .hero h2{
-    font-size:clamp(1.1rem, 2vw, 1.5rem);
+    font-size:clamp(1rem, 1.6vw, 1.5rem);
     font-weight:400;
 }
 
@@ -395,10 +395,9 @@ header a:hover{
 
 .footer-site{
     margin-top: 60px;
-    background: linear-gradient(135deg, #F20574, #ff5ca8);
+    background: linear-gradient(135deg, #F20574);
     color: white;
     border-radius: 35px 35px 0 0;
-    box-shadow: 0 -8px 25px rgba(236, 0, 118, 0.25);
     overflow: hidden;
 }
 
@@ -418,32 +417,39 @@ header a:hover{
     margin-bottom: 12px;
 }
 
-.footer-info p,
-.footer-questionario p{
+.footer-info p {
     font-size: 1rem;
     line-height: 1.6;
     opacity: 0.95;
 }
 
+.footer-questionario p {
+    color: #F20574;
+}
+
 .footer-questionario{
-    background: rgba(255,255,255,0.15);
+    background: white;
     padding: 25px;
     border-radius: 25px;
     backdrop-filter: blur(8px);
 }
 
-.footer-questionario h3,
-.footer-social h3{
+.footer-questionario h3{
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #F20574;
+}
+
+.footer-social h3 {
+    color: white;
 }
 
 .btn-questionario{
     display: inline-block;
     margin-top: 15px;
-    background: white;
-    color: #ec0076;
+    background: #F20574;
+    color: white;
     padding: 12px 22px;
     border-radius: 30px;
     text-decoration: none;
@@ -454,7 +460,7 @@ header a:hover{
 .btn-questionario:hover{
     transform: translateY(-3px);
     box-shadow: 0 8px 18px rgba(0,0,0,0.18);
-    background: #fff0f7;
+    
 }
 
 .footer-social{
@@ -473,6 +479,7 @@ header a:hover{
     text-decoration: none;
     font-size: 1.9rem;
     transition: 0.3s ease;
+    margin-top: 8px;
 }
 
 .social-btn:hover{
