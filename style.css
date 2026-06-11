@@ -654,65 +654,86 @@ header a:hover{
 @media(max-width:600px){
 
     nav{
+        flex-direction:column;
         justify-content:center;
+        align-items:center;
         text-align:center;
         padding:1rem;
+        gap:1rem;
+    }
+
+    .logo{
+        font-size:2rem;
     }
 
     .menu{
         width:100%;
+        display:flex;
         justify-content:center;
         flex-wrap:wrap;
         gap:1rem;
         margin:0;
+        font-size:1rem;
     }
 
     .btn-contato{
         width:100%;
+        display:flex;
+        justify-content:center;
     }
 
     .btn-contato button{
+        width:220px;
+        margin:0;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        min-height:auto;
+        padding:3rem 1.2rem 0;
+        gap:1rem;
+    }
+
+    .hero-conteudo{
         width:100%;
     }
 
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    min-height:auto;
-    padding:3rem 1rem 0 1rem;
+    .hero h1{
+        font-size:clamp(2rem, 3vw, 3.8rem);
+        line-height:1.05;
     }
 
-    .hero h1{
-        font-size:2.4rem;
+    .hero h2{
+        font-size:1.1rem;
+        margin-top:10px;
     }
 
     .hero-image-container{
         width:100%;
         height:auto;
         justify-content:center;
+        align-items:flex-end;
     }
 
     .hero-image-container figure{
+        width:100%;
         justify-content:center;
     }
 
     .hero-image-container img{
         width:100%;
-        max-width:380px;
+        max-width:320px;
         height:auto;
+        min-width:unset;
     }
 
-    .informacoes,
-    .quem-somos,
-    .bancos,
-    .mapa{
-        padding-left:1rem;
-        padding-right:1rem;
+    .container-quem{
+        flex-direction:column;
     }
 
-    .container-quem img{
-        width:100%;
-        max-width:340px;
+    .texto{
+        text-align:center;
     }
 
     .card,
@@ -720,15 +741,9 @@ header a:hover{
         width:100%;
     }
 
-    .mapa iframe{
-        height:320px;
-    }
-
     .footer-container{
-        padding:35px 20px;
-    }
-
-    .footer-site{
-        border-radius:25px 25px 0 0;
+        grid-template-columns:1fr;
+        text-align:center;
     }
 }
+
