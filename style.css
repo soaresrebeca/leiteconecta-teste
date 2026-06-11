@@ -655,11 +655,19 @@ header a:hover{
 
     nav{
         flex-direction:column;
-        justify-content:center;
         align-items:center;
         text-align:center;
         padding:1rem;
-        gap:1rem;
+        gap:1.5rem;
+    }
+
+    .menu li{
+        width:100%;
+    }
+
+    .menu a{
+        display:block;
+        padding:10px;
     }
 
     .logo{
